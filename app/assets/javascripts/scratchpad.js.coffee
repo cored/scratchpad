@@ -3,6 +3,9 @@ window.Scratchpad =
   Collections: {}
   Views: {}
   Routers: {}
+  initialize: -> 
+    new @Routers.ScratchPadRouter
+    Backbone.history.start(pushState: true)
 
 window.App = window.Scratchpad
 
