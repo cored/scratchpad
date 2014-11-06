@@ -5,5 +5,7 @@ window.Scratchpad =
   Routers: {}
   initialize: -> alert 'Hello from Backbone!'
 
+window.App = window.Scratchpad
+
 $(document).ready ->
   Scratchpad.initialize()
